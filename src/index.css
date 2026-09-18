@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --branco: rgb(238, 238, 238);
+    --preto: #131212;  
+
 }
+
+.main{
+    background-color: var(--preto);
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.Header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--preto);
+    border-color: #292929;
+    font-weight: 600;
+    color: rgb(238, 231, 231);
+    padding:  0 50px;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header div{
+    display: flex;
+    justify-content: space-between;
+    padding-right:15px ;
+}
+
+
+
+.Header div a{
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+}
+
+.Header div a+a{
+    margin-left: 30px;
+}
+
+
+.loader {
+  margin:auto;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #fff #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {to{transform: rotate(.5turn)}}
