@@ -48,7 +48,7 @@ function Filme() {
               <h1>{filme.title}</h1>
               <p>{filme.overview}</p>
               <div className="botoes-filme">
-                <a  target="_blank" href={`https://www.youtube.com/results?search_query=trailer ${filme.title}`}><button id="trailer-filme">Ver Trailer</button></a>
+                <a  target="blank" href={`https://www.youtube.com/results?search_query=trailer ${filme.title}`}><button id="trailer-filme">Ver Trailer</button></a>
                 <button id="adcionar-lista">Adicionar a Minha Lista</button>
               </div>
             </div>
