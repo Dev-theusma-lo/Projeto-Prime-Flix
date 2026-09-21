@@ -6,8 +6,7 @@ function Header(){
             <h1>PrimeFlix</h1>
             <div>
                 <Link to="/" >Home</Link>
-                <Link>Contato</Link>
-                <Link>Minha Lista</Link>
+                <Link to="/">Minha Lista</Link>
             </div>
         </div>
     )
